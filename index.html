@@ -1,0 +1,42 @@
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <!-- <script src="node_modules/@aspnet/signalr/dist/browser/signalr.js" type="text/javascript"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" type="text/javascript"></script>
+        <script src="./signalr.js" type="text/javascript"></script>
+        <script src="./index.js" type="text/javascript"></script>
+
+        <div style="text-align: center; ">
+            Testando SignalR
+        </div>
+
+        <br/>
+        <br/>
+
+        <div style="text-align: center;">
+            <input id="inpUsuario" type="text" placeholder="Usuário"/>
+            <br/>
+            <input id="inpSenha" type="text" placeholder="Senha"/>
+            <br/>
+            <br/>
+            
+            <div >
+                <span>Tipo de Conexão</span><br>
+                <input type="radio" id="loja" name="rgTypeConn" value="loja" checked>
+                <label for="loja">Loja</label><br>
+                <input type="radio" id="pdvone" name="rgTypeConn" value="pdvone">
+                <label for="pdvone">PdvOne</label><br>
+            </div>
+
+            <br/>
+
+            <button id="btnLogin" onclick="loginServer()"> Login </button>
+        </div>
+
+    </body>
+</html>
